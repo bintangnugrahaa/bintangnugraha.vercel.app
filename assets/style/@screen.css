@@ -26,4 +26,8 @@
   h2.my-2 {
     font-size: calc(1.7rem);
   }
+  .text-dark {
+    font-family: 'Poppins';
+    font-size: 15.8px;
+}
 }
