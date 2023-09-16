@@ -18,8 +18,8 @@
   --secondary-dark: #15180d;
   --accent-dark: #bdd7b3;
 }
-h2, h2 {
-    font-size: calc(1.31rem + .9vw);
+h2.my-2 {
+    font-size: calc(1.1rem + .9vw);
 }
 /* MAIN CSS */
 .left-section {
