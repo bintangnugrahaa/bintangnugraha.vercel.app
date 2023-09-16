@@ -23,4 +23,7 @@
   #pagesImage {
     max-width: 100%;
   }
+  h2.my-2 {
+    font-size: calc(1.7rem);
+  }
 }
