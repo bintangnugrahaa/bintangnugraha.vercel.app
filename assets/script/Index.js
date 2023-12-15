@@ -29,33 +29,68 @@ page.forEach((e) => {
   });
 });
 
-const slideImages = document.querySelectorAll("#pagesImage"),
-  Previous = document.getElementById("Previous"),
-  Next = document.getElementById("Next");
-let fromIndex = 1;
+const certificateSlideImages = document.querySelectorAll("#pagesImage");
+const CertificatePrevious = document.getElementById("Previous");
+const CertificateNext = document.getElementById("Next");
+let certificateFromIndex = 1;
 
-const showImages = (e) => {
-  slideImages.forEach((x) => {
+const showCertificateImages = (e) => {
+  certificateSlideImages.forEach((x) => {
     x.style.display = "none";
     x.classList.remove("imagesActive");
   });
-  slideImages[e - 1].style.display = "block";
-  slideImages[e - 1].classList.add("imagesActive");
+  certificateSlideImages[e - 1].style.display = "block";
+  certificateSlideImages[e - 1].classList.add("imagesActive");
 
-  return fromIndex;
+  return certificateFromIndex;
 };
-const prevImages = () => {
-  if (fromIndex > 1) {
-    fromIndex--;
-    showImages(fromIndex);
+
+const prevCertificateImages = () => {
+  if (certificateFromIndex > 1) {
+    certificateFromIndex--;
+    showCertificateImages(certificateFromIndex);
   }
 };
 
-const nextImages = () => {
-  if (fromIndex < slideImages.length) {
-    fromIndex++;
-    showImages(fromIndex);
+const nextCertificateImages = () => {
+  if (certificateFromIndex < certificateSlideImages.length) {
+    certificateFromIndex++;
+    showCertificateImages(certificateFromIndex);
   }
 };
-Previous.addEventListener("click", prevImages);
-Next.addEventListener("click", nextImages);
+
+CertificatePrevious.addEventListener("click", prevCertificateImages);
+CertificateNext.addEventListener("click", nextCertificateImages);
+
+const projectSlideImages = document.querySelectorAll("#projectPagesImage");
+const ProjectPrevious = document.getElementById("ProjectPrevious");
+const ProjectNext = document.getElementById("ProjectNext");
+let projectFromIndex = 1;
+
+const showProjectImages = (e) => {
+  projectSlideImages.forEach((x) => {
+    x.style.display = "none";
+    x.classList.remove("imagesActive");
+  });
+  projectSlideImages[e - 1].style.display = "block";
+  projectSlideImages[e - 1].classList.add("imagesActive");
+
+  return projectFromIndex;
+};
+
+const prevProjectImages = () => {
+  if (projectFromIndex > 1) {
+    projectFromIndex--;
+    showProjectImages(projectFromIndex);
+  }
+};
+
+const nextProjectImages = () => {
+  if (projectFromIndex < projectSlideImages.length) {
+    projectFromIndex++;
+    showProjectImages(projectFromIndex);
+  }
+};
+
+ProjectPrevious.addEventListener("click", prevProjectImages);
+ProjectNext.addEventListener("click", nextProjectImages);

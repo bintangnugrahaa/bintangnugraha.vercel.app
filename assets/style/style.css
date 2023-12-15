@@ -52,6 +52,13 @@ h2.my-2 {
   max-width: 100%;
   height: auto;
 }
+#projectPagesImage {
+  max-width: 60%;
+}
+#projectPagesImage img {
+  max-width: 100%;
+  height: auto;
+}
 /* HOVER CSS CREATE */
 .left-section:hover {
   width: 240px;
@@ -63,7 +70,13 @@ h2.my-2 {
   border-radius: 12px;
   transition: 0.3s all ease-out;
 }
-#Next:hover, #Previous:hover {
-  opacity: .7;
-  transition: .3s all ease-out;
+#Next:hover,
+#Previous:hover {
+  opacity: 0.7;
+  transition: 0.3s all ease-out;
+}
+#ProjectNext:hover,
+#ProjectPrevious:hover {
+  opacity: 0.7;
+  transition: 0.3s all ease-out;
 }
