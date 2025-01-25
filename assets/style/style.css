@@ -51,6 +51,7 @@ h2.my-2 {
 #pagesImage img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 #projectPagesImage {
   max-width: 60%;
