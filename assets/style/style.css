@@ -19,11 +19,11 @@
   --accent-dark: #bdd7b3;
 }
 h2.my-2 {
-  font-size: calc(1.95rem);
+  font-size: calc(1.85rem);
 }
 /* MAIN CSS */
 .left-section {
-  width: 75px;
+  width: 80px;
 }
 .active {
   border-radius: 12px;
@@ -58,6 +58,7 @@ h2.my-2 {
 #projectPagesImage img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 /* HOVER CSS CREATE */
 .left-section:hover {
